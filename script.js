@@ -6,6 +6,11 @@
  www.deloryan.com
  studio@deloryan.com
  
+ Written for:
+ Avans Hogeschool
+ Mobile Development
+ Cohort 2012
+ 
  *****************************************/
 
 // onDeviceReady oproepen als Phonegap geladen is. Op dit moment is het document geladen, maar phonegap.js nog niet. Wanneer Phonegap is geladen en interacteerd met het native device, dan roept hij 'deviceready' aan.
