@@ -1,0 +1,92 @@
+/*****************************************
+ 
+ Studio Deloryan
+ Deloryan Hommers
+ 
+ www.deloryan.com
+ studio@deloryan.com
+ 
+ Written for:
+ Avans Hogeschool
+ Mobile Development
+ Cohort 2012
+ 
+ *****************************************/
+
+html,body{
+	background:#4A7A9B;
+	color:#FFF;
+    font-size:18px;
+	margin-bottom:50px;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:100%;
+	font-weight:300;
+}
+
+h1{
+    font-weight:normal;
+    padding:10px 0;
+	font-size:300%;
+	color:#ffffff;	
+}
+
+p{
+	font-size:110%;
+	line-height:125%;	
+}
+
+#page1, #page2, #page3{
+	width:90%;
+	padding:5%;
+}
+
+.button{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+/*
+Ik heb het onTouchStart event nodig, want anders werkt de transform functie niet. Alleen geeft het onTouchStart event continue errors bij de CSS validator. Echter wordt er nergens aangegeven hoe ik hem wel goed moet zetten, ik heb 12 manieren geprobeerd en de errors bleven. De enige oplossing leek mij nog het eruit te halen, maar dan heb je geen feedback als je op een knop drukt. Dus ondanks dat hij die errors geeft heb ik toch de transform functie erin gelaten.
+*/
+.button:active{
+	-webkit-transform: scale(0.9, 0.9);
+	transform:scale(0.9, 0.9);	
+}
+
+
+#tabbar{
+    position:fixed;
+    bottom:0;
+    height:50px;
+    background:#171c27;
+    width:100%;
+	text-align:center;
+}
+
+.selected{
+	color:#F1C40F;
+}
+
+#left{
+    position: absolute;
+    left: 0px;
+    right:67%;
+	margin:10px 0;
+}
+
+#middle{
+    position: absolute;
+    left: 33%;
+    right:33%;
+	margin:10px 0;
+}
+
+#right{
+    position: absolute;
+    left: 66%;
+    right:0px;
+	margin:10px 0;
+}
+    
+    
